@@ -1,0 +1,6 @@
+train: C:/Users/mayn_ku/Desktop/parking_ai/dataset/images/train
+val: C:/Users/mayn_ku/Desktop/parking_ai/dataset/images/val
+nc: 2
+names: ['occupied', 'available']
+
+
