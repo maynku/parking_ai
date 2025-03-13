@@ -1,0 +1,51 @@
+te: [Insert Date]
+Author: [Your Name]
+1. Introduction
+1.1 Overview
+The goal of this project is to develop an AI-based system that can detect and count parking spaces using a live video feed from an IP camera or phone. The system will identify occupied and available parking spots in real time and display the count on the screen.
+1.2 Scope (MVP Features)
+•	Live video feed from an IP camera or phone.
+•	Real-time parking space detection using a white A4 sheet with marked parking slots.
+•	Matchboxes will represent cars for testing.
+•	YOLO (You Only Look Once) for object detection.
+•	OpenCV for image processing.
+•	Scikit-learn for potential model fine-tuning.
+•	Display the total number of parking spaces and the number of occupied spaces.
+1.3 Out of Scope
+•	No dashboard or database storage.
+•	No advanced UI/UX—just a simple display of parking space count.
+•	No mobile app integration.
+2. Functional Requirements
+2.1 Core Features
+Feature	Description
+Live Video Feed	Capture live video using an IP camera or phone.
+Parking Slot Detection	Identify marked parking slots on a white A4 sheet.
+Car Detection	Detect matchbox-sized "cars" occupying slots.
+Real-time Counting	Display the number of available and occupied slots.
+3. Technical Requirements
+3.1 Tech Stack
+•	Hardware: Phone/IP camera
+•	Software & Libraries: 
+o	Python
+o	OpenCV (for video processing)
+o	YOLO (for object detection)
+o	Scikit-learn (if needed for additional classification tasks)
+3.2 Data Flow
+1.	The camera captures a live feed of the parking area (A4 sheet with marked slots).
+2.	YOLO detects the parking spaces and the matchbox cars.
+3.	OpenCV processes the video frames to track occupancy.
+4.	The system counts occupied and available slots.
+5.	The final count is displayed on-screen.
+4. User Interface
+•	A simple screen displaying: 
+o	Total Parking Slots: X
+o	Occupied Slots: Y
+o	Available Slots: Z
+5. Constraints & Assumptions
+•	The camera angle must remain fixed.
+•	Lighting conditions should be stable.
+•	Parking slots should be clearly marked.
+6. Success Metrics
+•	Accuracy of parking slot detection (target: >90%).
+•	Real-time performance (<1 sec delay).
+•	Stability of the live feed processing.
